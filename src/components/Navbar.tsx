@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -18,9 +19,15 @@ export default function Navbar() {
         <a
           href="#home"
           aria-label="Isaac Tobiko, home"
-          className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-linear-to-br from-white to-neutral-400 font-mono text-[15px] font-extrabold tracking-tight text-neutral-950 shadow-[0_0_24px_rgba(255,255,255,0.3)]"
+          className="relative block h-10 w-10 shrink-0 overflow-hidden rounded-xl shadow-[0_0_24px_rgba(255,255,255,0.3)]"
         >
-          IT
+          <Image
+            src="/profile.jpg"
+            alt="Isaac Tobiko"
+            fill
+            sizes="40px"
+            className="object-cover"
+          />
         </a>
         <nav
           aria-label="Primary"

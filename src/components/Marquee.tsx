@@ -1,33 +1,60 @@
-const lane1 = [
-  { ico: "Ht", name: "HTML" },
-  { ico: "Cs", name: "CSS" },
-  { ico: "Tw", name: "Tailwind CSS" },
-  { ico: "Js", name: "JavaScript" },
-  { ico: "Re", name: "React" },
-  { ico: "Ts", name: "TypeScript" },
-  { ico: "Nx", name: "Next.js" },
-  { ico: "Py", name: "Python" },
-  { ico: "Fa", name: "FastAPI" },
-  { ico: "Sq", name: "SQL" },
-  { ico: "Pg", name: "PostgreSQL" },
+import type { IconType } from "react-icons";
+import {
+  SiHtml5,
+  SiCss,
+  SiTailwindcss,
+  SiJavascript,
+  SiReact,
+  SiTypescript,
+  SiNextdotjs,
+  SiPython,
+  SiFastapi,
+  SiPostgresql,
+  SiDocker,
+  SiKubernetes,
+  SiJenkins,
+  SiGit,
+  SiGithub,
+  SiGithubactions,
+  SiLinux,
+  SiNginx,
+  SiVercel,
+  SiPostman,
+  SiFigma,
+} from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
+import { VscCode } from "react-icons/vsc";
+
+type Item = { Icon: IconType; name: string; color?: string };
+
+const lane1: Item[] = [
+  { Icon: SiHtml5, name: "HTML", color: "#E34F26" },
+  { Icon: SiCss, name: "CSS", color: "#1572B6" },
+  { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
+  { Icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
+  { Icon: SiReact, name: "React", color: "#61DAFB" },
+  { Icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+  { Icon: SiNextdotjs, name: "Next.js" },
+  { Icon: SiPython, name: "Python", color: "#3776AB" },
+  { Icon: SiFastapi, name: "FastAPI", color: "#009688" },
+  { Icon: FaDatabase, name: "SQL", color: "#F29111" },
+  { Icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
 ];
 
-const lane2 = [
-  { ico: "Dk", name: "Docker" },
-  { ico: "K8", name: "Kubernetes" },
-  { ico: "Jk", name: "Jenkins" },
-  { ico: "Gt", name: "Git" },
-  { ico: "Gh", name: "GitHub" },
-  { ico: "GA", name: "GitHub Actions" },
-  { ico: "Lx", name: "Linux" },
-  { ico: "Ng", name: "Nginx" },
-  { ico: "Vc", name: "Vercel" },
-  { ico: "Vs", name: "VS Code" },
-  { ico: "Pm", name: "Postman" },
-  { ico: "Fg", name: "Figma" },
+const lane2: Item[] = [
+  { Icon: SiDocker, name: "Docker", color: "#2496ED" },
+  { Icon: SiKubernetes, name: "Kubernetes", color: "#326CE5" },
+  { Icon: SiJenkins, name: "Jenkins", color: "#D24939" },
+  { Icon: SiGit, name: "Git", color: "#F05032" },
+  { Icon: SiGithub, name: "GitHub" },
+  { Icon: SiGithubactions, name: "GitHub Actions", color: "#2088FF" },
+  { Icon: SiLinux, name: "Linux", color: "#FCC624" },
+  { Icon: SiNginx, name: "Nginx", color: "#009639" },
+  { Icon: SiVercel, name: "Vercel" },
+  { Icon: VscCode, name: "VS Code", color: "#007ACC" },
+  { Icon: SiPostman, name: "Postman", color: "#FF6C37" },
+  { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
 ];
-
-type Item = { ico: string; name: string };
 
 function Set({ items, hidden }: { items: Item[]; hidden?: boolean }) {
   return (
@@ -35,11 +62,13 @@ function Set({ items, hidden }: { items: Item[]; hidden?: boolean }) {
       {items.map((t) => (
         <span
           key={t.name}
-          className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium"
+          className="inline-flex items-center gap-2.5 whitespace-nowrap rounded-full border border-border bg-surface px-4 py-2.5 text-sm font-medium"
         >
-          <i className="grid h-6 w-6 place-items-center rounded-md bg-surface2 font-mono text-[10px] font-bold not-italic">
-            {t.ico}
-          </i>
+          <t.Icon
+            className="h-5 w-5 shrink-0"
+            style={t.color ? { color: t.color } : undefined}
+            aria-hidden="true"
+          />
           {t.name}
         </span>
       ))}
@@ -66,7 +95,7 @@ export default function Marquee() {
       className="py-12 sm:py-16"
     >
       <p className="mb-6 text-center font-mono text-xs uppercase tracking-widest text-muted">
-        Tools of the trade
+        What I Build With
       </p>
       <div className="flex flex-col gap-3">
         <Lane items={lane1} />
