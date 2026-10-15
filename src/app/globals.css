@@ -238,3 +238,29 @@ body {
     transition: none;
   }
 }
+
+@keyframes chip-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.chip-float {
+  animation: chip-float 3s ease-in-out infinite;
+  animation-delay: var(--fd, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .chip-float {
+    animation: none;
+  }
+}
+.lane {
+  animation: marquee 70s linear infinite;
+}
+.lane-rev {
+  animation-direction: reverse;
+  animation-duration: 90s;
+}

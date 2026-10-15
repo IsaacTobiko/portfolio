@@ -42,6 +42,7 @@ export default function Contact() {
           <div>
             <h2 className="mt-2 font-mono text-[clamp(26px,3vw,36px)] font-bold leading-tight tracking-tight">
               Ready when the problem needs a builder
+              <span className="cursor-blink ml-2 inline-block h-[0.1em] w-[0.6em] bg-green-700" />
             </h2>
             <p className="mt-4 text-muted">
               Have a product to ship or a team that needs a developer? Send a

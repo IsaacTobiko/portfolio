@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { IconType } from "react-icons";
 import {
   SiHtml5,
@@ -80,6 +81,7 @@ export default function Skills() {
         </h2>
         <p className="mb-12 mt-4 max-w-160 text-muted">
           From the interface to the pipeline that delivers it.
+          <span className="cursor-blink ml-2 inline-block h-[0.1em] w-[0.6em] bg-green-700" />
         </p>
       </Reveal>
       <div className="grid gap-6 md:grid-cols-2">
@@ -88,10 +90,15 @@ export default function Skills() {
             <div className="h-full rounded-2xl border border-border bg-surface p-6 transition hover:-translate-y-1 hover:border-muted sm:p-8">
               <h3 className="mb-6 font-mono text-lg font-bold">{g.title}</h3>
               <div className="flex flex-wrap gap-2">
-                {g.skills.map(({ Icon, name, color }) => (
+                {g.skills.map(({ Icon, name, color }, j) => (
                   <span
                     key={name}
-                    className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-surface2 pl-3 pr-4 text-sm font-medium transition hover:-translate-y-0.5 hover:border-muted"
+                    style={
+                      {
+                        "--fd": `${-((i * 3 + j) % 5) * 0.6}s`,
+                      } as CSSProperties
+                    }
+                    className="chip-float inline-flex h-10 items-center gap-2 rounded-full border border-border bg-surface2 pl-3 pr-4 text-sm font-medium transition hover:border-muted"
                   >
                     <Icon
                       className="h-5 w-5 shrink-0"

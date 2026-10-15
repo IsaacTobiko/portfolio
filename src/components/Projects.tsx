@@ -26,6 +26,7 @@ export default function Projects() {
         </h2>
         <p className="mb-12 mt-4 max-w-160 text-muted">
           Things I have designed, built and deployed end to end.
+          <span className="cursor-blink ml-2 inline-block h-[0.1em] w-[0.6em] bg-green-700" />
         </p>
       </Reveal>
 

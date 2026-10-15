@@ -80,8 +80,9 @@ function Lane({ items, reverse }: { items: Item[]; reverse?: boolean }) {
   return (
     <div className="mq overflow-hidden">
       <div className={`lane flex w-max ${reverse ? "lane-rev" : ""}`}>
-        <Set items={items} />
-        <Set items={items} hidden />
+        {[0, 1, 2, 3].map((n) => (
+          <Set key={n} items={items} hidden={n > 0} />
+        ))}
       </div>
     </div>
   );
@@ -90,7 +91,7 @@ function Lane({ items, reverse }: { items: Item[]; reverse?: boolean }) {
 export default function Marquee() {
   return (
     <section
-      id="skills"
+      id="marquee"
       aria-label="Technologies I work with"
       className="py-12 sm:py-16"
     >
