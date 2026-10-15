@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="mx-auto grid max-w-300 items-center gap-12 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_.85fr] lg:gap-16 lg:px-8 lg:py-24"
+      className="relative mx-auto grid max-w-300 items-center gap-12 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_.85fr] lg:gap-16 lg:px-8 lg:py-24"
     >
       <div className="text-center lg:text-left">
         <div className="inline-flex min-h-8 items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 font-mono text-[11px] text-muted sm:px-4 sm:text-[13px]">
@@ -78,6 +78,24 @@ export default function Hero() {
 }; // always shipping`}</pre>
         </div>
       </div>
+      <a
+        href="#skills"
+        aria-label="Scroll down"
+        className="absolute bottom-4 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-muted transition hover:text-text sm:flex"
+      >
+        Scroll
+        <svg
+          viewBox="0 0 24 24"
+          className="scroll-arrow h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 5v14M6 13l6 6 6-6" />
+        </svg>
+      </a>
     </section>
   );
 }
