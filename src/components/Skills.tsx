@@ -73,13 +73,13 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto max-w-300 scroll-mt-24 px-4 pt-24 sm:px-6 lg:px-8"
+      className="mx-auto max-w-300 scroll-mt-24 px-4 pt-20 sm:px-6 sm:pt-28 lg:px-8"
     >
       <Reveal>
-        <h2 className="mt-2 font-mono text-[clamp(26px,3vw,36px)] font-bold leading-tight tracking-tight">
+        <h2 className="font-mono text-[clamp(26px,3vw,36px)] font-bold leading-tight tracking-tight">
           Skills
         </h2>
-        <p className="mb-12 mt-4 max-w-160 text-muted">
+        <p className="mb-10 mt-4 max-w-160 text-muted sm:mb-14">
           From the interface to the pipeline that delivers it.
           <span className="cursor-blink ml-2 inline-block h-[0.1em] w-[0.6em] bg-green-700" />
         </p>

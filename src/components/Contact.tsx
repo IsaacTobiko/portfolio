@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-300 scroll-mt-24 px-4 pt-24 sm:px-6 lg:px-8"
+      className="mx-auto max-w-300 scroll-mt-24 px-4 pt-20 sm:px-6 sm:pt-28 lg:px-8"
     >
       <Reveal>
         <div className="grid gap-8 rounded-3xl border border-border bg-linear-to-br from-surface2 to-surface p-6 sm:p-12 md:grid-cols-2 md:gap-12">
