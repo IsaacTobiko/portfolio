@@ -1,9 +1,12 @@
 "use client";
 
+import { FaWhatsapp } from "react-icons/fa";
 import { useState, type FormEvent } from "react";
 import Reveal from "./Reveal";
 
 const EMAIL = "tobikoisaack@gmail.com";
+const WHATSAPP =
+  "https://wa.me/254743776184?text=Hello%20Isaac%2C%20I%20saw%20your%20portfolio.";
 
 const input =
   "h-12 w-full rounded-xl border border-border bg-bg px-4 text-base outline-none transition focus:border-text";
@@ -65,6 +68,15 @@ export default function Contact() {
                   <path d="M3 6h18v12H3zM3 7l9 6 9-6" />
                 </svg>
                 {EMAIL}
+              </a>
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 transition hover:text-muted"
+              >
+                <FaWhatsapp className="h-5 w-5 shrink-0" aria-hidden="true" />
+                WhatsApp: 0743 776 184
               </a>
               <div className="flex items-center gap-4">
                 <svg
