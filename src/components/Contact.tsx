@@ -76,7 +76,7 @@ export default function Contact() {
                 className="flex items-center gap-4 transition hover:text-muted"
               >
                 <FaWhatsapp className="h-5 w-5 shrink-0" aria-hidden="true" />
-                WhatsApp: 0743 776 184
+                Chat on WhatsApp
               </a>
               <div className="flex items-center gap-4">
                 <svg
