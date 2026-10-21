@@ -2,7 +2,7 @@
 
 **Live site:** [portfolio-isaac-tobiko.vercel.app](https://portfolio-isaac-tobiko.vercel.app/)
 
-Personal portfolio of Isaac Tobiko, a full-stack developer based in Nairobi, Kenya. It showcases my projects, skills, and contact details, with the tagline **Code it. Containerize it. Ship it.**
+My personal portfolio, a full-stack developer based in Nairobi, Kenya. It showcases my projects, skills, and contact details, with the tagline **Code it. Containerize it. Ship it.**
 
 ## Features
 
