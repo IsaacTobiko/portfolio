@@ -39,8 +39,8 @@ My personal portfolio, a full-stack developer based in Nairobi, Kenya. It showca
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/IsaacTobiko/portfolio-isaac-tobiko.git
-cd portfolio-isaac-tobiko
+git clone https://github.com/IsaacTobiko/portfolio.git
+cd portfolio
 npm install
 ```
 
