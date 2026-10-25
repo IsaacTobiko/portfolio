@@ -12,8 +12,6 @@ import {
   SiFastapi,
   SiPostgresql,
   SiDocker,
-  SiKubernetes,
-  SiJenkins,
   SiGit,
   SiGithub,
   SiLinux,
@@ -52,8 +50,6 @@ const groups: { title: string; skills: Skill[] }[] = [
     title: "DevOps",
     skills: [
       { Icon: SiDocker, name: "Docker", color: "#2496ED" },
-      { Icon: SiKubernetes, name: "Kubernetes", color: "#326CE5" },
-      { Icon: SiJenkins, name: "Jenkins", color: "#D24939" },
       { Icon: SiGithub, name: "GitHub" },
       { Icon: SiLinux, name: "Linux", color: "#FCC624" },
     ],
