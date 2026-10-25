@@ -11,8 +11,6 @@ import {
   SiFastapi,
   SiPostgresql,
   SiDocker,
-  SiKubernetes,
-  SiJenkins,
   SiGit,
   SiGithub,
   SiGithubactions,
@@ -43,8 +41,6 @@ const lane1: Item[] = [
 
 const lane2: Item[] = [
   { Icon: SiDocker, name: "Docker", color: "#2496ED" },
-  { Icon: SiKubernetes, name: "Kubernetes", color: "#326CE5" },
-  { Icon: SiJenkins, name: "Jenkins", color: "#D24939" },
   { Icon: SiGit, name: "Git", color: "#F05032" },
   { Icon: SiGithub, name: "GitHub" },
   { Icon: SiGithubactions, name: "GitHub Actions", color: "#2088FF" },
