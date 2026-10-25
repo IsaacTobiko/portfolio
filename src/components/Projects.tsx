@@ -65,18 +65,12 @@ export default function Projects() {
             </div>
             <div className="flex flex-wrap gap-4 pt-2">
               <a
-                href="#"
-                className="inline-flex h-12 items-center gap-2 rounded-xl bg-linear-to-br from-white to-neutral-400 px-6 text-[15px] font-semibold text-neutral-950 transition hover:-translate-y-0.5"
-              >
-                Live demo ↗
-              </a>
-              <a
                 href="https://github.com/IsaacTobiko/nsti-cakes-fullstack"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 items-center gap-2 rounded-xl border border-border bg-surface px-6 text-[15px] font-semibold transition hover:-translate-y-0.5"
+                className="inline-flex h-12 items-center gap-2 rounded-xl bg-linear-to-br from-white to-neutral-400 px-6 text-[15px] font-semibold text-neutral-950 transition hover:-translate-y-0.5"
               >
-                GitHub
+                View on GitHub ↗
               </a>
             </div>
           </div>
